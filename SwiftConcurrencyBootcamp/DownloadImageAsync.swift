@@ -11,6 +11,8 @@ import Combine
 
 
 //downloading done with 3 different ways
+
+// MARK: LOADER
 class DownloadImageAsyncImageLoader {
     
     let url = URL(string: "https://picsum.photos/200")!
@@ -63,6 +65,8 @@ class DownloadImageAsyncImageLoader {
 }
 
 
+
+//MARK: VIEWMODEL
 class DownloadImageAsyncViewModel: ObservableObject {
     
     @Published var image: UIImage? = nil
@@ -130,6 +134,9 @@ class DownloadImageAsyncViewModel: ObservableObject {
     
 }
 
+
+
+//MARK: DOWNLOAD IMAGE VIEW
 struct DownloadImageAsync: View {
     
     @StateObject private var viewModel = DownloadImageAsyncViewModel()

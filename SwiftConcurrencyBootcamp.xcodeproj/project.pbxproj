@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		443053052A728E2E000CC3C5 /* AsyncAwaitBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443053042A728E2E000CC3C5 /* AsyncAwaitBootcamp.swift */; };
 		4464B3A62A72375B0066304A /* SwiftConcurrencyBootcampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4464B3A52A72375B0066304A /* SwiftConcurrencyBootcampApp.swift */; };
 		4464B3A82A72375B0066304A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4464B3A72A72375B0066304A /* ContentView.swift */; };
 		4464B3AA2A72375C0066304A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4464B3A92A72375C0066304A /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		443053042A728E2E000CC3C5 /* AsyncAwaitBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitBootcamp.swift; sourceTree = "<group>"; };
 		4464B3A22A72375B0066304A /* SwiftConcurrencyBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConcurrencyBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4464B3A52A72375B0066304A /* SwiftConcurrencyBootcampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyBootcampApp.swift; sourceTree = "<group>"; };
 		4464B3A72A72375B0066304A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				4464B3A72A72375B0066304A /* ContentView.swift */,
 				4464B3B32A7237890066304A /* DoCatchTryThrowsBootcamp.swift */,
 				4464B3B52A724CDA0066304A /* DownloadImageAsync.swift */,
+				443053042A728E2E000CC3C5 /* AsyncAwaitBootcamp.swift */,
 				4464B3A92A72375C0066304A /* Assets.xcassets */,
 				4464B3AB2A72375C0066304A /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 				4464B3B62A724CDB0066304A /* DownloadImageAsync.swift in Sources */,
 				4464B3B42A7237890066304A /* DoCatchTryThrowsBootcamp.swift in Sources */,
 				4464B3A82A72375B0066304A /* ContentView.swift in Sources */,
+				443053052A728E2E000CC3C5 /* AsyncAwaitBootcamp.swift in Sources */,
 				4464B3A62A72375B0066304A /* SwiftConcurrencyBootcampApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

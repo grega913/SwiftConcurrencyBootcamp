@@ -11,7 +11,8 @@ import SwiftUI
 struct SwiftConcurrencyBootcampApp: App {
     var body: some Scene {
         WindowGroup {
-            DownloadImageAsync()
+            //DownloadImageAsync()
+            AsyncAwaitBootcamp()
         }
     }
 }
