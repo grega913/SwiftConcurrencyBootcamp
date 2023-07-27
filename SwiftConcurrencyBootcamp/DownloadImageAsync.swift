@@ -10,6 +10,7 @@ import Combine
 
 
 
+//downloading done with 3 different ways
 class DownloadImageAsyncImageLoader {
     
     let url = URL(string: "https://picsum.photos/200")!
