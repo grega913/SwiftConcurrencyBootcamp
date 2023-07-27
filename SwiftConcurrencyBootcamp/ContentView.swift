@@ -5,6 +5,9 @@
 //  Created by gs on 27/07/2023.
 //
 
+
+
+
 import SwiftUI
 
 struct ContentView: View {
@@ -13,7 +16,7 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Hello, world! What's up?")
         }
         .padding()
     }
