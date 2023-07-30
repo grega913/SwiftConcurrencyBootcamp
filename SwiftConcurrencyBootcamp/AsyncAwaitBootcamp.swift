@@ -17,6 +17,9 @@ import SwiftUI
  
  */
 
+
+// MARK: VIEW MODEL
+
 class AsyncAwaitBootcampViewModel: ObservableObject {
     
     @Published var dataArray: [String] = []
@@ -86,6 +89,8 @@ class AsyncAwaitBootcampViewModel: ObservableObject {
 
 
 
+
+//MARK: VIEW
 
 struct AsyncAwaitBootcamp: View {
     
