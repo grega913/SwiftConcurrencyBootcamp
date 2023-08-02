@@ -32,11 +32,11 @@ class TaskGroupBootcampDataManager {
             "https://picsum.photos/400",
             "https://picsum.photos/200",
             "https://picsum.photos/300",
+            "https://picsum.photos/300",
+            "https://picsum.photos/300",
             "https://picsum.photos/300"
         ]
-        
-        
-        
+
         return try await withThrowingTaskGroup(of: UIImage?.self) { group in
             var images: [UIImage] = []
             images.reserveCapacity(urlStrings.count)

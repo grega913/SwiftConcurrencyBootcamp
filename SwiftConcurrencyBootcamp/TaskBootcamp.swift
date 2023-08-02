@@ -20,7 +20,7 @@ class TaskBootcampViewModel: ObservableObject {
     
     func fetchImage() async {
         
-        try? await Task.sleep(for:.seconds(5))
+        try? await Task.sleep(for:.seconds(1))
 
         do {
         

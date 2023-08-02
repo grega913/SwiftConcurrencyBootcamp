@@ -13,7 +13,9 @@ struct SwiftConcurrencyBootcampApp: App {
         WindowGroup {
             //DownloadImageAsync()
             //AsyncAwaitBootcamp()
-            TaskBootcampHomeView()
+            //TaskBootcampHomeView()
+            //StructClassActorBootcamp()
+            StructClassActorBootcampHomeView()
         }
     }
 }
