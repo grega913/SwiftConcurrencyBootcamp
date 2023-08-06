@@ -49,6 +49,36 @@
                   endingLineNumber = "142"
                   offsetFromSymbolStart = "44">
                </Location>
+               <Location
+                  uuid = "9F184B05-2927-4769-A96D-29CC972C3EEC - 683788090fff6e5f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of SwiftConcurrencyBootcamp.DownloadImageAsync.viewModel : SwiftConcurrencyBootcamp.DownloadImageAsyncViewModel"
+                  moduleName = "SwiftConcurrencyBootcamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gs/Documents/SwiftfulThinking/ComplexApps/SwiftConcurrencyBootcamp/SwiftConcurrencyBootcamp/DownloadImageAsync.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "9F184B05-2927-4769-A96D-29CC972C3EEC - 32769e3327260697"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftConcurrencyBootcamp.DownloadImageAsync.init() -&gt; SwiftConcurrencyBootcamp.DownloadImageAsync"
+                  moduleName = "SwiftConcurrencyBootcamp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gs/Documents/SwiftfulThinking/ComplexApps/SwiftConcurrencyBootcamp/SwiftConcurrencyBootcamp/DownloadImageAsync.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "52">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

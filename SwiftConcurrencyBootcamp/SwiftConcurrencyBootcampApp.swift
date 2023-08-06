@@ -15,7 +15,8 @@ struct SwiftConcurrencyBootcampApp: App {
             //AsyncAwaitBootcamp()
             //TaskBootcampHomeView()
             //StructClassActorBootcamp()
-            StructClassActorBootcampHomeView()
+            //StructClassActorBootcampHomeView()
+            ActorsBootcamp()
         }
     }
 }
