@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		443053052A728E2E000CC3C5 /* AsyncAwaitBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443053042A728E2E000CC3C5 /* AsyncAwaitBootcamp.swift */; };
 		4453E59F2A7F6B19009029AF /* SendableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453E59E2A7F6B19009029AF /* SendableBootcamp.swift */; };
+		4453E5A12A7F71B5009029AF /* AsyncPublisherBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4453E5A02A7F71B5009029AF /* AsyncPublisherBootcamp.swift */; };
 		445802662A7CC1D700773DD2 /* ActorsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445802652A7CC1D700773DD2 /* ActorsBootcamp.swift */; };
 		4464B3A62A72375B0066304A /* SwiftConcurrencyBootcampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4464B3A52A72375B0066304A /* SwiftConcurrencyBootcampApp.swift */; };
 		4464B3A82A72375B0066304A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4464B3A72A72375B0066304A /* ContentView.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		443053042A728E2E000CC3C5 /* AsyncAwaitBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitBootcamp.swift; sourceTree = "<group>"; };
 		4453E59E2A7F6B19009029AF /* SendableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendableBootcamp.swift; sourceTree = "<group>"; };
+		4453E5A02A7F71B5009029AF /* AsyncPublisherBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncPublisherBootcamp.swift; sourceTree = "<group>"; };
 		445802652A7CC1D700773DD2 /* ActorsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorsBootcamp.swift; sourceTree = "<group>"; };
 		4464B3A22A72375B0066304A /* SwiftConcurrencyBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftConcurrencyBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4464B3A52A72375B0066304A /* SwiftConcurrencyBootcampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftConcurrencyBootcampApp.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				445802652A7CC1D700773DD2 /* ActorsBootcamp.swift */,
 				44B0DBD62A7ECF89006605AC /* GlobalActorBootcamp.swift */,
 				4453E59E2A7F6B19009029AF /* SendableBootcamp.swift */,
+				4453E5A02A7F71B5009029AF /* AsyncPublisherBootcamp.swift */,
 				4464B3A92A72375C0066304A /* Assets.xcassets */,
 				4464B3AB2A72375C0066304A /* Preview Content */,
 			);
@@ -182,6 +185,7 @@
 				44B3108C2A7575460005A3CB /* TaskBootcamp.swift in Sources */,
 				44B0DBD72A7ECF89006605AC /* GlobalActorBootcamp.swift in Sources */,
 				443053052A728E2E000CC3C5 /* AsyncAwaitBootcamp.swift in Sources */,
+				4453E5A12A7F71B5009029AF /* AsyncPublisherBootcamp.swift in Sources */,
 				4464B3A62A72375B0066304A /* SwiftConcurrencyBootcampApp.swift in Sources */,
 				44B310912A7647230005A3CB /* AsyncLetBootcamp.swift in Sources */,
 				44B310932A764E180005A3CB /* TaskGroupBootcamp.swift in Sources */,
