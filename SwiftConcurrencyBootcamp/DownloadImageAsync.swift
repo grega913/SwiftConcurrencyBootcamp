@@ -25,7 +25,6 @@ class DownloadImageAsyncImageLoader {
             response.statusCode >= 200 && response.statusCode < 300 else {
                 return nil
         }
-        
         return image
     }
     
@@ -34,7 +33,7 @@ class DownloadImageAsyncImageLoader {
         URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
             
             let image = self?.handleResponse(data: data, response: response)
-            completionHandler(image, error)
+                completionHandler(image, error)
             }
             .resume()
     }
@@ -49,7 +48,7 @@ class DownloadImageAsyncImageLoader {
     
     
     // mark the function with async keyword -> support concurrency
-    func downloadWithAsync() async throws  -> UIImage?{
+    func downloadWithAsync() async throws  -> UIImage? {
         print("loader.downloadWithAsync")
 
         do {
@@ -112,9 +111,8 @@ class DownloadImageAsyncViewModel: ObservableObject {
         
     }
     
-    
     func fetchImageAsync() async {
-        print("fetchImageAsync")
+        print("func viewModel.fetchImageAsync")
         
         
         let image = try? await loader.downloadWithAsync()
@@ -122,15 +120,14 @@ class DownloadImageAsyncViewModel: ObservableObject {
         //Publishing changes from background threads is not allowed . . . make sure
         // since we are in async function, we should start using actors
         
+        // Once we are in async environment, we should be using actors.
+        
         
         await MainActor.run {
             self.image = image
         }
         
     }
-    
-
-    
     
 }
 
@@ -157,6 +154,7 @@ struct DownloadImageAsync: View {
             
             // how to support async context here . . by starting a task and awaiting
             Task {
+                print("func onAppear")
                 await viewModel.fetchImageAsync()
             }
             

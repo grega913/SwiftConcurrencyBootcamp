@@ -10,8 +10,7 @@ import SwiftUI
 
 // MARK: NOTES
 /*
- Just because we are in a task, using await, in an asynchronous environment, does not mean we are in a different thread than the main.
- It might mean that, and often it does, but not always.
+ Just because we are in a task, using await, in an asynchronous environment, does not mean we are in a different thread than the main. It might mean that, and often it does, but not always.
  So it is a good idea to switch to the MainActor before updating UI.
  
  
@@ -26,7 +25,6 @@ class AsyncAwaitBootcampViewModel: ObservableObject {
     
     func addTitle1() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { self.dataArray.append("Title1 : \(Thread.current)")
-
         }
     }
     
@@ -55,7 +53,7 @@ class AsyncAwaitBootcampViewModel: ObservableObject {
         let author2 = "Author2: \(Thread.current)"
         self.dataArray.append(author2)
         
-        //using main actor in async function do that we go back to main threa
+        //using main actor in async function do that we go back to main thread
         await MainActor.run(body: {
             let author3 = "Author3: \(Thread.current)"
             self.dataArray.append(author3)
@@ -106,9 +104,10 @@ struct AsyncAwaitBootcamp: View {
         .onAppear {
             //viewModel.addTitle1()
             //viewModel.addTitle2()
+            // using Task if we are in async environment
             Task {
                 await viewModel.addAuthor1()
-                
+
                 let finalText = "FINAL TEXT: \(Thread.current)"
                 viewModel.dataArray.append(finalText)
             }

@@ -59,7 +59,6 @@ struct AsyncLetBootcamp: View {
                  */
                 Task {
                     do {
-                        
                         async let fetchImage1 = fetchImage()
                         async let fetchImage2 = fetchImage()
                         async let fetchImage3 = fetchImage()

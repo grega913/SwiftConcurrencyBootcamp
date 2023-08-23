@@ -21,9 +21,7 @@ class TaskGroupBootcampDataManager {
         
         return [image1, image2, image3, image4]
     }
-    
-    
-    
+            
     func fetchImagesWithTaskGroup() async throws -> [UIImage] {
         
         let urlStrings = [
@@ -56,14 +54,14 @@ class TaskGroupBootcampDataManager {
             group.addTask {
                 try await self.fetchImage(urlString: "https://picsum.photos/300")
             }
-            
             group.addTask {
                 try await self.fetchImage(urlString: "https://picsum.photos/300")
             }
             
             group.addTask {
                 try await self.fetchImage(urlString: "https://picsum.photos/300")
-            }
+            
+             }
             */
             // this waits for each of the tasks to come back
             for try await image in group {
@@ -79,8 +77,7 @@ class TaskGroupBootcampDataManager {
         
         
     }
-    
-    
+        
     private func fetchImage(urlString: String) async throws -> UIImage {
         
         guard let url = URL(string: urlString) else {

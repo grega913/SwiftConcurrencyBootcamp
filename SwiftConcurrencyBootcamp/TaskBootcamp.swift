@@ -45,7 +45,7 @@ class TaskBootcampViewModel: ObservableObject {
             let (data, response) =  try await URLSession.shared.data(from: url, delegate: nil)
             await MainActor.run(body: {
                 self.image2 = UIImage(data:data)
-                print("IMAGE RETURNED")
+                print("IMAGE2 RETURNED")
                 
             })
             
@@ -76,6 +76,7 @@ class TaskBootcampViewModel: ObservableObject {
 struct TaskBootcamp: View {
     
     @StateObject private var viewModel = TaskBootcampViewModel()
+    
     @State private var fetchImageTask: Task<(), Never>? = nil
     
     var body: some View {
@@ -94,9 +95,12 @@ struct TaskBootcamp: View {
                     .frame(width: 200, height: 200)
             }
         }
-
+            
+        //onAppear -> Task - we can change with .task modifier
+        
         .task {
             await viewModel.fetchImage()
+            //await viewModel.fetchImage2()
         }
         /*
         .onDisappear {

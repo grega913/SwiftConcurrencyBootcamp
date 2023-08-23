@@ -56,6 +56,7 @@ class DoCatchTryThrowsBootcampDataManager {
      fails, it will throw us an error
      */
     func getTitle3() throws -> String {
+        print("func manager getTitle3")
         if isActive {
             return "NEW TEXT"
         } else {
@@ -65,6 +66,7 @@ class DoCatchTryThrowsBootcampDataManager {
     
     
     func getTitle4() throws -> String {
+        print("func manager.getTitle4")
         if isActive {
             return "FINAL TEXT"
         } else {
@@ -79,9 +81,11 @@ class DoCatchTryThrowsBootcampDataManager {
 class DoCatchTryThrowsBootcampViewModel: ObservableObject {
     
     @Published var text: String = "Starting text."
+    
     let manager = DoCatchTryThrowsBootcampDataManager()
     
     func fetchTitle () {
+        print("func vm fetchTitle")
        /* v1
        let newTitle = manager.getTitle()
             if let newTitle = newTitle {
@@ -130,15 +134,14 @@ class DoCatchTryThrowsBootcampViewModel: ObservableObject {
         // with getTitle4
         /*
          if try? is optional, we don't care about the error, it will not send us to catch block
+         so we don't need to do catch block
          */
         do {
             let newTitle = try? manager.getTitle3()
             if let newTitle = newTitle {
                 self.text = newTitle
             }
-            
 
-            
             let finalTitle = try manager.getTitle4()
             self.text = finalTitle
         } catch {
@@ -160,10 +163,30 @@ struct DoCatchTryThrowsBootcamp: View {
     @StateObject private var viewModel = DoCatchTryThrowsBootcampViewModel()
     
     var body: some View {
+        
+        VStack {
+            Text(viewModel.text)
+                .frame(width: 300, height: 100)
+                .background(.blue)
+                .onTapGesture {
+                    print("onTapGesture")
+                    viewModel.fetchTitle()
+                }
+            
+            Text(viewModel.text)
+                .frame(width: 300, height: 100)
+                .background(.blue)
+                .onTapGesture {
+                    print("onTapGesture")
+                    viewModel.fetchTitle()
+                }
+        }
+        
         Text(viewModel.text)
-            .frame(width: 300, height: 300)
+            .frame(width: 300, height: 100)
             .background(.blue)
             .onTapGesture {
+                print("onTapGesture")
                 viewModel.fetchTitle()
             }
     }
