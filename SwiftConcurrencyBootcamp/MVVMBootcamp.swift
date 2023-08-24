@@ -35,13 +35,15 @@ final class MVVMBootcampViewModel: ObservableObject {
     private var tasks: [Task<Void, Never>] = []
     
     func cancelTasks() {
+        print("func viewModel.cancelTask")
         tasks.forEach({ $0.cancel() })
         tasks = []
     }
     
     
     func onCallToActionButtonPressed() {
-      let  task = Task {
+    print("viewmodel.onCallToActionButtonPressed")
+      let task = Task {
           
           do {
               //myData = try await managerActor.getData()
@@ -70,7 +72,11 @@ struct MVVMBootcamp: View {
         Button(viewModel.myData) {
             viewModel.onCallToActionButtonPressed()
         }
+        .onAppear {
+            print("func view.onAppear")
+        }
         .onDisappear {
+            print("func view.onDisappear")
             viewModel.cancelTasks()
         }
          

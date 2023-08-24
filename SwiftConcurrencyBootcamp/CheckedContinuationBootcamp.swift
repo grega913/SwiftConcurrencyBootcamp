@@ -26,8 +26,6 @@ class CheckedContinuationBootcampNetworkManager {
     }
     
     // the way dataTask work is that you set it up and then need to resume it to execute it
-    
-    
     func getData2(url:URL) async throws -> Data {
        return try await withCheckedThrowingContinuation { continuation in //we are suspending the task
            URLSession.shared.dataTask(with: url) { data, response, error in
@@ -47,15 +45,18 @@ class CheckedContinuationBootcampNetworkManager {
     // before using continuation
     
     func getHeartImageFromDatabase(completionHandler: @escaping (_ image: UIImage) -> ()) {
-        
+        print("getHeartImageFromDatabase")
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            print("after 5 secs")
             completionHandler(UIImage(systemName: "heart.fill")!)
         }
     }
     
     
     func getHeartImageFromDatabase() async -> UIImage {
-       await  withCheckedContinuation { continuation in
+        
+       await withCheckedContinuation { continuation in
+           print("manager.getHeartImageFromDatabase")
             getHeartImageFromDatabase { image in
                 continuation.resume(returning: image)
             }

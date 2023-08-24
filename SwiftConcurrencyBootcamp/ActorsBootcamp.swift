@@ -124,7 +124,7 @@ struct BrowseView: View {
     //let manager = MyDataManager.instance
     let manager = MyActorDataManager.instance
     @State private var text: String = ""
-    let timer = Timer.publish(every: 0.01, tolerance: nil, on: .main, in: .common, options: nil).autoconnect()
+    let timer = Timer.publish(every: 1, tolerance: nil, on: .main, in: .common, options: nil).autoconnect()
     
     var body: some View {
         ZStack {
